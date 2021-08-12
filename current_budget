@@ -1,0 +1,31 @@
+current_budget = 3000
+
+def print_remainig_budget(current_budget):
+    print("The remaining budget: {}".format(current_budget))
+
+# we assign the arguments 'budget' and 'expense' to demonstrate what happens within this function
+# the second argument is subtracted from the first
+
+def deduct_expense(budget, expense):
+    return budget - expense
+
+print_remainig_budget(current_budget)
+shirt_expense = 30
+
+# create a new variable budget_after_shirt and set it to be the function call of deduct_expense()
+# call the function deduct_expense() and pass in the variables:
+# current_budget as the first argument and the specific expense (shirt_expense) variable as the second argument
+# current budget gets updated after every call of the function
+
+budget_after_shirt = deduct_expense(current_budget, shirt_expense)
+print_remainig_budget(budget_after_shirt)
+
+pants_expense = 50
+
+budget_after_pants = deduct_expense(current_budget, pants_expense)
+print_remainig_budget(budget_after_pants)
+
+skirt = 80
+
+budget_after_skirt = deduct_expense(current_budget, skirt)
+print_remainig_budget(budget_after_skirt)
