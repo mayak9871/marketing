@@ -1,0 +1,23 @@
+age= 0
+
+def birth_info (yob, age):
+    age = 2021 - yob
+    print('You were born in {} and you are {} years old'.format(yob, age))
+    return
+
+yob = int(input("Enter the year you were born: "))
+birth_info (yob, age)
+
+if yob >= 1946 and yob <= 1964:
+    print("Congratulations! People born in {} are Baby Boomers".format(yob))
+elif yob >= 1965 and yob <= 1980:
+    print("Congratulations! People born in {} are Generation X".format(yob))
+elif yob >= 1981 and yob <= 1996:
+    print("Congratulations! People born in {} are Generation Y".format(yob))
+elif yob >= 1997 and yob <= 2012:
+    print("Congratulations! People born in {} are Generation Z".format(yob))
+elif yob >= 2012 and yob <= 2025:
+    print("Congratulations! People born in {} are Generation Alpha".format(yob))
+else:
+    print("please, input correct year of birth")
+
